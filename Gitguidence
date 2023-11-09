@@ -1,0 +1,31 @@
+What is Git?
+Git is a free source control management.(SCM)
+---------------------------------------
+Download:
+website:https://git-scm.com/downloads
+
+Homebrew
+Install homebrew if you don't already have it, then:
+$ brew install git
+
+MacPorts
+Install MacPorts if you don't already have it, then:
+$ sudo port install git
+----------------------------------------
+How to use Git?
+1.git config --global user.name "your name"                //set your name
+2.git config --global user.email siriforever@outlook.com   //set your email address
+3.git config --global init.default branch main             //set the branch named main
+4.git config -h                    //show me the config information
+5.git help config                  //show the detail information
+change the dictory[cd ~/xcode/Repository] and execute belowed code:
+6.git init    //Enter and then you will create our first repository,it is normally hidden,we could press [com+shit+.] to show or hide
+Here we create a .git folder
+7.git status  //tell us the status of our repository
+Normally our files are untraced,so if we make changes to them.Git won't care.
+8.git add <file name>              //track a file
+9.git rm --cached <file name>      //unstage the file
+10.To create a file name .gitignore allow us to ignore the files,folders or even entire extention.
+   The usage of .gitignore could access https://github.com/github/gitignore
+11.git add --all                   //track all the files.Or [git all -A][git all .] to do the same effection.
+12.commit:take a snapshot of your repository at this point in time
