@@ -1,0 +1,4 @@
+This is a declaration of the pygame Pong.
+
+
+ball.shape("square") ---will create a ball which size 20 * 20 pixels
