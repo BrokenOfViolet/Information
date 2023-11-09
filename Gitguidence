@@ -18,6 +18,7 @@ How to use Git?
 3.git config --global init.default branch main             //set the branch named main
 4.git config -h                    //show me the config information
 5.git help config                  //show the detail information
+
 change the dictory[cd ~/xcode/Repository] and execute belowed code:
 6.git init    //Enter and then you will create our first repository,it is normally hidden,we could press [com+shit+.] to show or hide
 Here we create a .git folder
@@ -28,4 +29,28 @@ Normally our files are untraced,so if we make changes to them.Git won't care.
 10.To create a file name .gitignore allow us to ignore the files,folders or even entire extention.
    The usage of .gitignore could access https://github.com/github/gitignore
 11.git add --all                   //track all the files.Or [git all -A][git all .] to do the same effection.
-12.commit:take a snapshot of your repository at this point in time
+what is commit?
+take a snapshot of your repository at this point in time.Look like write some info into history book.
+12.git commit -m "first commit -- Here are the commit"   //sumbit the commit
+13.gti diff                        //show the difference between original and modified file
+After changing the file,we could use "git add <file name>"to track the file.
+Staging is like a place where is ready to be committed.
+Three environment in Git:1.working directory 2.staging 3.commit
+14.git restore --staged <file name>    //move this file back from staging to working directory
+/if I commit now,this file will not be include because the file is curently in the working directory
+15.git commit -a -m "comment"          //skip the staging and directly move file from workdirt to commit[seems useless in my mac]
+16.git rm "file_name_you_want_to_delete"
+17.git restore --stage "file name"     //quoted the file name
+   git restore "file name"             //this two command will restore the file you delete before
+18.git mv "old_file" "new_file"        //rename the file
+19.git log [--oneline]                 //see all the commits we've made.Switch --oneline allow us to see the simplify log
+20.git commit -m "comment" --amend     //amend the commit lastest we had done before
+21.git log -p                          //see all the different changes(press 'q' to exit the view)
+22.git reset <The hashtag>             //jump to the previous commit
+23.git rebase -i --root                //change the content of commits
+24.git branch [branch name]            //create a new brach
+25.git branch                          //show all the branches
+
+
+
+
