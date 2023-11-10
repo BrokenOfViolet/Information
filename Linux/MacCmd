@@ -1,0 +1,36 @@
+-----------------------The command of MacOS---------------------
+
+1.say [what ever you want to say]
+2.security find-generic-password wa "wifi-name" [| pbcopy]  //show the wifi's password.The 'pbcopy' will copy the output
+3.caffeinate          //make your terminal wake,and press ctrl + c to stop coffee break
+4.defaults write com.apple.screencapture name <modified name>    //modify the name of sreenimage
+5.defailts write com.apple.screencapture type <modified type>    //change the type of image
+6.cd      //change the directory
+7.ls      //show all the files and folders in this directory
+8.pwd     //print working directory.show the path where you are
+9.whoami  //show the name of the user
+10.mv <old position> <new position>      //move our file
+11.cp <old position> <new position>      //copy file from old to new position
+12.ditto                                 //play the simial function of 'cp'
+13.nano [file name]                      //edit the file
+14.man <command>                         //show the usage of the command
+15.open <file name>                      //open the file
+16.ping <objection>                      //ping the website or ip.Press Ctrl+c to quit
+17.ifconfig en0 | grep inet | awk '{ print $2 }'    //print the IP address
+18.traceroute [www.baidu.com]                       //trace the router through the destination
+19.dig [website name]                               //resolution the IP address of the web name
+20.ps [-ax] | grep <process name>                   //show all processes,switch -ax allows to show more
+21.top                   //show the processes which use most CPU real time
+22.kill -9 <process id>  //end the process
+23.which $shell          //show the shell
+24.bash                  //switch to the bash kernal
+25.uptime                //show the last time we lauch our mac
+26.qlmanage -p <file_name>          //show the little review
+27.diff <file_1> <file_2>           //compare two files
+28.curl <url>                       //download files
+29.curl wttr.in/pairs               //show the weather informations
+
+
+
+
+
