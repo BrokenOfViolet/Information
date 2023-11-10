@@ -17,6 +17,7 @@ $ sudo port install git
 ------------------------------------------------
 
 How to use Git?
+
 1.git config --global user.name "your name"                //set your name
 2.git config --global user.email siriforever@outlook.com   //set your email address
 3.git config --global init.default branch main             //set the branch named main
@@ -71,7 +72,14 @@ ps:We can fix bugs in one branches and, after finished, we can merge the changes
 
 -----------------------------------------------------------------------------------------------------------------------
 
+The codes above are all based on local computer
+And we can also commit our codes to a cloud repository
+
 How to use github?
+
+1.git remote add origin <url of your github repository>
+//we are calling this remote connection "origin" which is a common name
+
 
 
 
