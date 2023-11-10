@@ -99,6 +99,8 @@ How to use github?
 6.git pull
 //git changes in cloud back to our local machine with one simple command
 
+7.git remote remove origin
+//kill the connection origin
 
 
 
