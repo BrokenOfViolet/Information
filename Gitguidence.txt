@@ -45,7 +45,7 @@ Three environment in Git:1.working directory 2.staging 3.commit
 14.git restore --staged <file name>    //move this file back from staging to working directory
 /if I commit now,this file will not be include because the file is curently in the working directory
 
-15.git commit -a -m "comment"          //skip the staging and directly move file from workdirt to commit
+15.git commit -a -m "comment"          //skip the staging and directly move all the files from workdirt to commit
 
 16.git rm "file_name_you_want_to_delete"
 17.git restore --stage "file name"     //quoted the file name
@@ -87,8 +87,17 @@ How to use github?
 3.git push -u origin main
 //push all the content from our local repository to the cloud
 
-4.
+4.git push --all
+//push all the branches to github
 
+5.get changes in cloud back to our local machine
+1st step: git fetch
+//download all the history from the remote tracking branches to local computer
+2nd step: git merge
+//git them merge in
+
+6.git pull
+//git changes in cloud back to our local machine with one simple command
 
 
 
