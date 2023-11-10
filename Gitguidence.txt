@@ -79,6 +79,15 @@ How to use github?
 
 1.git remote add origin <url of your github repository>
 //we are calling this remote connection "origin" which is a common name
+//Here is <https://github.com/BrokenOfViolet/MyRepository
+
+2.git branch -M main
+//set the target branch to main
+
+3.git push -u origin main
+//push all the content from our local repository to the cloud
+
+4.
 
 
 
