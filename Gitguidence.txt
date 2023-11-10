@@ -1,6 +1,8 @@
 What is Git?
 Git is a free source control management.(SCM)
----------------------------------------
+
+-----------------------------------------------------
+
 Download:
 website:https://git-scm.com/downloads
 
@@ -11,7 +13,9 @@ $ brew install git
 MacPorts
 Install MacPorts if you don't already have it, then:
 $ sudo port install git
-----------------------------------------
+
+------------------------------------------------
+
 How to use Git?
 1.git config --global user.name "your name"                //set your name
 2.git config --global user.email siriforever@outlook.com   //set your email address
@@ -29,6 +33,7 @@ Normally our files are untraced,so if we make changes to them.Git won't care.
 10.To create a file name .gitignore allow us to ignore the files,folders or even entire extention.
    The usage of .gitignore could access https://github.com/github/gitignore
 11.git add --all                   //track all the files.Or [git all -A][git all .] to do the same effection.
+
 what is commit?
 take a snapshot of your repository at this point in time.Look like write some info into history book.
 12.git commit -m "first commit -- Here are the commit"   //sumbit the commit
@@ -38,7 +43,9 @@ Staging is like a place where is ready to be committed.
 Three environment in Git:1.working directory 2.staging 3.commit
 14.git restore --staged <file name>    //move this file back from staging to working directory
 /if I commit now,this file will not be include because the file is curently in the working directory
-15.git commit -a -m "comment"          //skip the staging and directly move file from workdirt to commit[seems useless in my mac]
+
+15.git commit -a -m "comment"          //skip the staging and directly move file from workdirt to commit
+
 16.git rm "file_name_you_want_to_delete"
 17.git restore --stage "file name"     //quoted the file name
    git restore "file name"             //this two command will restore the file you delete before
@@ -48,8 +55,24 @@ Three environment in Git:1.working directory 2.staging 3.commit
 21.git log -p                          //see all the different changes(press 'q' to exit the view)
 22.git reset <The hashtag>             //jump to the previous commit
 23.git rebase -i --root                //change the content of commits
-24.git branch [branch name]            //create a new brach
+24.git branch [branch name]            //create a new branch
+insert: git switch -c <branch name>    //create a new branch
 25.git branch                          //show all the branches
+26.git switch <branch name>            //switch to another branch(make it activated)
+
+Ps:The changes we've made in the branch will haven't influence on another branch
+
+27.git merge -m "Every commit you want to write" <branch name>      //make <branch name>'s change merge into this active branch
+28.git branch -d <branch name>                                      //delete the branch
+
+* if we change both two branch's file and then use "git merge" command, it will show a error in git bash and corresponding it will
+   represent two version in the changed file.We could do our choice.And then commit the file.
+ps:We can fix bugs in one branches and, after finished, we can merge the changes in the main branch you are working on.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+How to use github?
+
 
 
 
