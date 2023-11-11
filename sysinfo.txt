@@ -1,5 +1,0 @@
-23:15  up 1 day, 23:01, 2 users, load averages: 2.84 3.52 3.56
-USER     TTY      FROM              LOGIN@  IDLE WHAT
-mac      console  -                三00   1day  -
-mac      s001     -                22:12       - w
-Thanks so much.
