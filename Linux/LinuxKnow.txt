@@ -1,0 +1,5 @@
+This file is just a note by a Linux beginner
+
+ps -aux | grep <process_name>
+filter the process
+
