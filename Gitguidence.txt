@@ -1,0 +1,107 @@
+What is Git?
+Git is a free source control management.(SCM)
+
+-----------------------------------------------------
+
+Download:
+website:https://git-scm.com/downloads
+
+Homebrew
+Install homebrew if you don't already have it, then:
+$ brew install git
+
+MacPorts
+Install MacPorts if you don't already have it, then:
+$ sudo port install git
+
+------------------------------------------------
+
+How to use Git?
+
+1.git config --global user.name "your name"                //set your name
+2.git config --global user.email siriforever@outlook.com   //set your email address
+3.git config --global init.default branch main             //set the branch named main
+4.git config -h                    //show me the config information
+5.git help config                  //show the detail information
+
+change the dictory[cd ~/xcode/Repository] and execute belowed code:
+6.git init    //Enter and then you will create our first repository,it is normally hidden,we could press [com+shit+.] to show or hide
+Here we create a .git folder
+7.git status  //tell us the status of our repository
+Normally our files are untraced,so if we make changes to them.Git won't care.
+8.git add <file name>              //track a file
+9.git rm --cached <file name>      //unstage the file
+10.To create a file name .gitignore allow us to ignore the files,folders or even entire extention.
+   The usage of .gitignore could access https://github.com/github/gitignore
+11.git add --all                   //track all the files.Or [git all -A][git all .] to do the same effection.
+
+what is commit?
+take a snapshot of your repository at this point in time.Look like write some info into history book.
+12.git commit -m "first commit -- Here are the commit"   //sumbit the commit
+13.gti diff                        //show the difference between original and modified file
+After changing the file,we could use "git add <file name>"to track the file.
+Staging is like a place where is ready to be committed.
+Three environment in Git:1.working directory 2.staging 3.commit
+14.git restore --staged <file name>    //move this file back from staging to working directory
+/if I commit now,this file will not be include because the file is curently in the working directory
+
+15.git commit -a -m "comment"          //skip the staging and directly move all the files from workdirt to commit
+
+16.git rm "file_name_you_want_to_delete"
+17.git restore --stage "file name"     //quoted the file name
+   git restore "file name"             //this two command will restore the file you delete before
+18.git mv "old_file" "new_file"        //rename the file
+19.git log [--oneline]                 //see all the commits we've made.Switch --oneline allow us to see the simplify log
+20.git commit -m "comment" --amend     //amend the commit lastest we had done before
+21.git log -p                          //see all the different changes(press 'q' to exit the view)
+22.git reset <The hashtag>             //jump to the previous commit
+23.git rebase -i --root                //change the content of commits
+24.git branch [branch name]            //create a new branch
+insert: git switch -c <branch name>    //create a new branch
+25.git branch                          //show all the branches
+26.git switch <branch name>            //switch to another branch(make it activated)
+
+Ps:The changes we've made in the branch will haven't influence on another branch
+
+27.git merge -m "Every commit you want to write" <branch name>      //make <branch name>'s change merge into this active branch
+28.git branch -d <branch name>                                      //delete the branch
+
+* if we change both two branch's file and then use "git merge" command, it will show a error in git bash and corresponding it will
+   represent two version in the changed file.We could do our choice.And then commit the file.
+ps:We can fix bugs in one branches and, after finished, we can merge the changes in the main branch you are working on.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+The codes above are all based on local computer
+And we can also commit our codes to a cloud repository
+
+How to use github?
+
+1.git remote add origin <url of your github repository>
+//we are calling this remote connection "origin" which is a common name
+//Here is <https://github.com/BrokenOfViolet/MyRepository
+
+2.git branch -M main
+//set the target branch to main
+
+3.git push -u origin main
+//push all the content from our local repository to the cloud
+
+4.git push --all
+//push all the branches to github
+
+5.get changes in cloud back to our local machine
+1st step: git fetch
+//download all the history from the remote tracking branches to local computer
+2nd step: git merge
+//git them merge in
+
+6.git pull
+//git changes in cloud back to our local machine with one simple command
+
+7.git remote remove origin
+//kill the connection origin
+
+
+
+
