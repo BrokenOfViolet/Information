@@ -86,6 +86,8 @@ How to use github?
 
 3.git push -u origin main
 //push all the content from our local repository to the cloud
+(In the circumstance of local and remote banch name is same)
+If not  >> git push <origin> <local_branch_name> <remote_branch_name>
 
 4.git push --all
 //push all the branches to github
@@ -102,6 +104,18 @@ How to use github?
 7.git remote remove origin
 //kill the connection origin
 
+8.git push origin +<branch name>
+//force local to push files to clould ( when we meet some error we use it)
 
+------------------------------------------------------------------------------
 
+PS.Here are many errors when I really try it.
+Fatal error: reject connection and so on
 
+git pull > run sucessfully
+git push > error
+
+Record it.And this note is just a reference.
+|
+|
+2023.11.11 In china, Wuhan city, Hubei Province.
